@@ -81,7 +81,7 @@ function ContactoForm() {
             </div>
             <div className="field">
               <label htmlFor="emailjs_message">Mensaje</label>
-              <textarea id="emailjs_message" placeholder="Mensaje" className="inputField textAreaField" name="emailjs_message" maxLength="300"></textarea>
+              <textarea id="emailjs_message" placeholder="Mensaje" className="inputField textAreaField" name="emailjs_message" maxLength="300" required></textarea>
             </div>
 
             <input type="submit" id="button" className="inputSub" value="Enviar Email" />
