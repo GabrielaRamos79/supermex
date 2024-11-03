@@ -8,11 +8,12 @@
     align-items: center;
     width: 100vw; 
     height: 100vh; 
+    /*FIXME cambiar img a .svg*/
     background-image: url("../../assets/images/menu-img/fondo-menu1.png");
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
-    padding-left: 7%;
+    padding-left: 10.5%;
 }
 
 .containerList{
@@ -23,12 +24,14 @@
 .item{
     margin: 5px;
     padding: 5px;
+    text-decoration: none;
 }
-/*TODO anadir font-family comprobar colores */
+
 .text{
     font-size: 46px;
     font-weight: 600;
-    color:#502f80;
+    color:#502F80;
+    font-family: "barlow", sans-serif;
 }
 .text:hover{
     cursor: pointer;
