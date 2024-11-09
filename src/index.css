@@ -1,3 +1,13 @@
+:root {
+  --rosa:#BE3E78;
+  --azul: #70BABF;
+  --morado: #502F80;
+  --amarillo: #F4C944;
+  --azul-oscuro: #252A6A; 
+
+  font-family: "barlow", sans-serif;
+  font-family: "barlow-condensed", sans-serif;
+}
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
