@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../navbar/NavBar.css'
-import { NavLink } from 'react-router-dom';
+import {Link, useLocation, } from 'react-router-dom';
 
 import logoAmarillo from '../../assets/images/navbar/logo/logo-amarillo.svg';
 import logoAzul from '../../assets/images/navbar/logo/logo-azul.svg';
@@ -19,15 +19,8 @@ function NavBar() {
         setCurrentLogoIndex(Math.floor(Math.random() * logos.length));
     }, []);
 
-    //cambiamos css class para boton menu
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
-    };
-    useEffect(() => {
-        toggleMenu();
-    }, [])
+    const location = useLocation();
+    const isMenuPage = location.pathname === '/menu';
 
     return (
         <nav className="navbar">
@@ -39,20 +32,23 @@ function NavBar() {
 
 
             <div className="logo">
-                <NavLink to="/">
+                <Link to="/">
                     <img src={logos[currentLogoIndex]} alt="logo" />
-                </NavLink>
+                </Link>
             </div>
 
-
-            <NavLink to={isMenuOpen ? '/' : '/menu'}>
-                <div className={isMenuOpen ? 'menu-btn menu-close' : 'menu-btn menu-open'}
-                    onClick={toggleMenu}>
-                </div>
-            </NavLink>
-
+            <div className="menu-btn">
+                {isMenuPage ? (
+                    <Link to="/">
+                        <div className="menu-btn menu-close"></div>
+                    </Link>
+                ) : (
+                    <Link to="/menu">
+                        <div className="menu-btn menu-open"></div>
+                    </Link>
+                )}
+            </div>
         </nav>
     )
 }
-
 export default NavBar;
