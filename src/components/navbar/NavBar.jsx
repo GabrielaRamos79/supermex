@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../navbar/NavBar.css'
 import {Link, useLocation, } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 import logoAmarillo from '../../assets/images/navbar/logo/logo-amarillo.svg';
 import logoAzul from '../../assets/images/navbar/logo/logo-azul.svg';
@@ -10,6 +11,12 @@ import logoRosa from '../../assets/images/navbar/logo/logo-rosa.svg';
 
 
 function NavBar() {
+
+    const { i18n } = useTranslation();
+
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    };
 
     //cambiamos logo cada vez cuando renderizamos la pagina
     const logos = [logoAmarillo, logoAzul, logoCeleste, logoMorado, logoRosa];
@@ -26,8 +33,8 @@ function NavBar() {
         <nav className="navbar">
 
             <div className="lang-switch-container">
-                <div className='lang-btn es'>ES</div>
-                <div className='lang-btn en'>EN</div>
+                <div onClick={() => changeLanguage('es')} className='lang-btn es'>ES</div>
+                <div onClick={() => changeLanguage('en')} className='lang-btn en'>EN</div>
             </div>
 
 
