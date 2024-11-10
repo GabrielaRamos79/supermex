@@ -5,6 +5,8 @@
     justify-content: space-between;
     align-items: flex-start;
     background-color: transparent;
+    position: fixed;
+    z-index: 1000;
 }
 /**********CONTENEDOR DE IDIOMAS***********/
 .lang-switch-container {
@@ -47,15 +49,15 @@
 /**********CONTENEDOR DE LOGO***********/
 
 .logo {
-    position: relative;
-    height: 70%; 
+    height: 100%; 
+    object-fit: contain;
 }
 
 .logo img {
-    position: absolute;
-    top: -70%;
-    left: 0;
+    position: relative;
+    top: -50%;
     transition: top 0.5s ease; 
+   
 }
 
 .logo:hover img {
