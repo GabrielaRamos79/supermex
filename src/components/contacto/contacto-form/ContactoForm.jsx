@@ -61,14 +61,16 @@ function ContactoForm() {
         <div>
           <h2>Contacto</h2>
           <form id="form" onSubmit={handleSubmit}>
-            <div className="field1">
+            <div className="field">
               <div className="rectangulo"></div>
               <input type="text" className="inputField" name="emailjs_name" id="emailjs_name" placeholder="Nombre" required />
             </div>
             <div className="field">
+            <div className="rectangulo"></div>
               <input type="text" className="inputField" name="emailjs_tlf" id="emailjs_tlf" placeholder="Teléfono" />
             </div>
             <div className="field">
+            <div className="rectangulo"></div>
               <input
                 type="text"
                 className="inputField"
@@ -82,9 +84,10 @@ function ContactoForm() {
               />
             </div>
             <div className="field">
+              <div className="rectangulo"></div>
               <textarea id="emailjs_message" placeholder="Mensaje" className="inputField2 textAreaField" name="emailjs_message" maxLength="300" required></textarea>
             </div>
-
+            <div className="rectangulo"></div>
             <input type="submit" id="button" className="inputSub" value="Enviar Email" />
           </form>
 
