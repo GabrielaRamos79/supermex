@@ -49,11 +49,12 @@ function ContactoForm() {
 
   return (
     <>
+      <p>¿Quieres enviar un mensaje a la tribu?</p>
       <div className="mainContainerContact">
         <div className="dataContact">
           <p>datos de contacto blalala alalala alalalalala</p>
         </div>
-        <div className="testt">
+        <div className="divFormGeneral">
           <form id="form" onSubmit={handleSubmit}>
             <div className="containerForm">
               {/* <div className="mainContainerForm"> */}
@@ -93,27 +94,31 @@ function ContactoForm() {
                     pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                   />
                 </div>
+                <div className="field">politica de privacidad</div>
               </div>
               <div className="containerFieldsRight">
-                <div className="field2">
-                  {/* <div className="rectangulo"></div> */}
-                  <textarea
-                    id="emailjs_message"
-                    placeholder="Comentario"
-                    className="inputField2 textAreaField"
-                    name="emailjs_message"
-                    maxLength="300"
-                    required
-                  ></textarea>
-
-                  {/* <div className="rectangulo"></div> */}
-                  <input
-                    type="submit"
-                    id="button"
-                    className="inputSub"
-                    value="Enviar Email"
-                  />
-                </div>
+                
+                  <div className="divTextArea">
+                    {/* <div className="rectangulo"></div> */}
+                    <textarea
+                      id="emailjs_message"
+                      placeholder="Comentario"
+                      className="textAreaField"
+                      name="emailjs_message"
+                      maxLength="150"
+                      required
+                    ></textarea>
+                  </div>
+                  <div className="divButton">
+                    {/* <div className="rectangulo"></div> */}
+                    <input
+                      type="submit"
+                      id="button"
+                      className="inputSub"
+                      value="¡Enviar!"
+                    />
+                  </div>
+                
               </div>
             </div>
           </form>
