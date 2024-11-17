@@ -1,291 +1,225 @@
-/* .frame { */
-    /* max-width: 600px; */
-    /* margin: 0 auto; */
-    /* padding: 2rem; */
-    /* text-align: center; */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
 
-    /* background-color: greenyellow; */
-    /* display: flex;
-    flex-direction: row;
-    width: 100%; */
-  /* } */
+*{
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #502F80;
+}
 
-  .mainContainerContact{
-    display: flex;
-    flex-direction: row;
-    /* background-color: orange; */
-    
-    width: 100%;
-    height: 100%;
-    padding: 15px;
-    box-sizing: border-box; /* Asegura que el padding y border se incluyan en el tamaño total */
-  }
+p {
+  font-size: 0.8em;
+}
 
-  .dataContact{
-    width: 30%;
-    background-color: yellow;
-  }
+h3 {
+  color: #502F80;
+}
 
-  .divFormGeneral{
-    /* background-color: #cbb6ec; */
-    width: 70%;
-    height: auto;
-  }
+h2{
+  margin: 0;
+}
 
-  .containerForm{
-    /* background-color: pink; */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* flex: 1; */
-   
-  }
+.inlineData{
+  display: inline;
+  padding-right: 20%;
+}
 
-  .containerFieldsLeft{
-    /* background-color: rgb(14, 148, 103); */
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-  }
-  .containerFieldsRight{    
-    background-color: #ecb07f;
-    width: 50%;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    border: 7px green solid;
-    height: auto;
-    padding-left: 4%;
-    padding-right: 4%;
-  }
-  
-.field1{
+.mainTittle {
+  /* border: #502F80 solid 2px; */
+  text-align: right;
+  padding-right: 5%;
+  color: #502F80;
+  background-color: #F4EFFF;
+  font-size: 1.2em;
+}
+
+.mainContainerContact {
+  display: flex;
+  flex-direction: row;
+  background-color: #F4EFFF;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.dataContact {
+  width: 30%;
+  /* background-color: yellow; */
+}
+
+.divFormGeneral {
+  width: 70%;
+  height: auto;
+}
+
+.containerForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.containerFieldsLeft {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.containerFieldsRight {
+  /* background-color: #ecb07f; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 7px green solid; */
+  height: auto;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.field1 {
   position: relative;
 }
 
-.field{
+.field {
   position: relative;
   padding-bottom: 2%;
-  border: #3883f3 solid 2px;
+  /* border: #3883f3 solid 2px; */
   display: flex;
 }
 
-/* .rightDivision{
-  display: flex;
-  flex-direction:column;
-  /* align-items: center; */
-  /* border: 7px green solid;
-  height: auto; */
-  /* padding-right: 5%;
-  padding-left: 5%; */
- 
-/*} */
-
-.inputField{
-    margin-bottom: 10px;
-    border: 3px solid #502F80;
-    border-radius: 40px;
-    padding: 3%; 
-    width: 95%;
-    margin: 4%;
+.field input, textarea{
+  z-index: 9;
+  border:6px solid #502F80;
+  box-shadow: 0.5em 0.3em 0px 0.01em #502F80;
 }
 
-.inputField2{
-  margin:1%;
+.field input{
+  box-shadow: 0.5em 0.3em 0px 0.01em #502F80;
+  font-size: 1em;
+}
+
+.inputField {
+  margin-bottom: 10px;
   border: 3px solid #502F80;
   border-radius: 40px;
-  padding: 0px; 
+  padding: 3%;
+  width: 95%;
+  margin: 4%;
+}
+
+.inputField2 {
+  margin: 1%;
+  border: 3px solid #502F80;
+  border-radius: 40px;
+  padding: 0px;
   width: 100%;
 }
 
-.rectangulo {
-    width: 82%; 
-    height: 8%; 
-    background-color: #502F80; 
-    position: absolute;
-    padding: 5%;
-    margin-left: 5%;
-    margin-top: 6%; 
-    border-radius: 40px;
-    z-index: -1;
-}
-  
-.field label {
-    display: block;
-    font-size: 16px;
-    text-align: left;
-}
-  
+/* .rectangulo {
+  width: 82%;
+  height: 8%;
+  background-color: #502F80;
+  position: absolute;
+  padding: 5%;
+  margin-left: 5%;
+  margin-top: 6%;
+  border-radius: 40px;
+  z-index: 1;
+} */
 
+/* .rectangulo2 {
+  width: 21%;
+  height: 15%;
+  background-color: #502F80;
+  position: absolute;
+  padding: 5.2%;
+  padding-bottom:4.8%;
+  margin-left: 0.5%;
+  margin-top: 1%;
+  border-radius: 40px;
+  z-index: 1;
+} */
+
+.field label {
+  display: block;
+  font-size: 16px;
+  text-align: left;
+}
 
 .inputSub {
-  /* display: block; */
-  padding: 4%;
-  font-size: 75%;
-  background-color: rgb(244,201,68);
-  
+  padding: 2%;
+  padding-left: 7%;
+  padding-right: 7%;
+  font-size: 1em;
+  background-color: rgb(244, 201, 68);
   border-radius: 40px;
-  box-shadow: 0 2px 4px #502F80;
-  width:fit-content;
+  width: fit-content;
   height: auto;
   align-self: center;
+  color:#502F80;
+  border: 6px solid #502F80;
+  box-shadow: 0.5em 0.3em 0px 0.01em #502F80;
 }
-
-
 
 .textAreaField {
   width: 100%;
-  height: auto;
+  height: 70%;
   border-radius: 40px;
   padding-top: 5%;
   padding-bottom: 5%;
-  padding-left:15%;
-  padding-right:15%;
-  border: 3px solid #502F80;
+  padding-left: 8%;
+  padding-right: 15%;
+  border: 6px solid #502F80;
+  resize: none;
+  font-size: 1em;
+  /* box-shadow: 9px 8px 0px 6px #502F80; */
+  /* box-shadow: 1em 1em 0px 0.2em #502F80; */
 }
 
-.divTextArea{
-  border: 2px red solid;
+.divTextArea {
+  /* border: 2px red solid; */
   width: 100%;
-  height: 75%;
+  height: 95%;
   display: flex;
+  padding-top: 2%;
 }
 
-.divButton{
-  border: 2px red solid;
+.divButton {
+  /* border: 2px red solid; */
   width: 100%;
-  height: 25%;
+  height: 15%;
   display: flex;
   justify-content: center;
   align-content: center;
 
 }
 
-  /* .field input {
-    display: block;
-    line-height: 1.5;
-    font-size: 16px;
-    border-radius: 40px;
-    background-color: #FFEEC7;
-    * border: none; 
-    box-shadow: #502F80;
-    width: 90%;
-  } */
-/*   
-  .inputSub {
-    display: block;
-    padding: 6px 30px;
-    font-size: 14px;
-    background-color: #7fb5e0;
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0 2px 4px rgba(65, 125, 216, 0.6);
-  }
-  
-  .inputSub:hover {
-    background-color: #D9ECEA;
-    color: #10558d;
-  }
-  
-  .inputField {
-    padding: 3%;
-    border-radius: 20px;
-    background-color: rgba(0, 26, 143, 0.25);
-    border: none;
-    box-shadow: 0 2px 4px rgba(28, 91, 187, 0.6);
-    overflow-y: auto;
-    overflow-y: auto;
-    display: block;
-    line-height: 1.5;
-    font-size: 14px;
-    resize: none;
-    margin: 2%;
-  } */
-  
-  /* .inputField:hover {
-    background-color: white;
-  }
-  
-  
-  .inputField:valid {
-    background-color: rgba(0, 38, 143, 0.25) !important;
-  }
-  
-  .inputField:focus {
-    background-color: white !important;
-  } */
-  
-  
-/*   
-  .inputField:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 1000px rgba(47, 78, 134, 0.25) inset;
-    transition: background-color 5000s ease-in-out 0s;
-  }
-  
-  .inputField:focus,
-  .textareaField:focus {
-    outline: none;
-  } */
-  
-  /* .textAreaField {
-    height: 150px;
-    border-radius: 10px;
-    width: 90%;
-  } */
-  
-  /* .textAreaField:hover {
-    background-color: white !important;
-  }
-   */
-  /* .container-form {
-    padding: 2%;
-    width: 100%;
-    border-radius: 15px;
-  
-  } */
-  
-  
-  /* ::-webkit-scrollbar {
-    width: 10px;
-    margin-top: 10px;
-  }
-  
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: #475ec4;
-    border-radius: 20px;
-    scroll-behavior: smooth;
-    overflow-anchor: none;
-  } */
-  
-  
-  .custom-alert {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #ffffff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    z-index: 9999;
-    border-radius: 0 20px 0 30px;
-  }
-  
-  .custom-alert-content {
-    text-align: center;
-  }
-  
-  .custom-alert button {
-    margin-top: 10px;
-    padding: 8px 16px;
-    background-color: #6790cc;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  
-  .custom-alert button:hover {
-    background-color: #D9ECEA;
-    color: #3883f3;
-  }
+.custom-alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  border-radius: 0 20px 0 30px;
+}
+
+.custom-alert-content {
+  text-align: center;
+}
+
+.custom-alert button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #6790cc;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.custom-alert button:hover {
+  background-color: #D9ECEA;
+  color: #3883f3;
+}

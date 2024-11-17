@@ -49,18 +49,32 @@ function ContactoForm() {
 
   return (
     <>
-      <p>¿Quieres enviar un mensaje a la tribu?</p>
+      <div className="mainTittle">
+        <h2>¿Quieres enviar un mensaje a la tribu?</h2>
+      </div>
+
       <div className="mainContainerContact">
         <div className="dataContact">
-          <p>datos de contacto blalala alalala alalalalala</p>
+          <h3>Fábrica/Envíos</h3>
+          <p>
+            Pol. Ind. Las Salinas de Poniente. c/ Eratóstenes, 198.<br></br> 11500 – El
+            Puerto de Santa María, Cádiz (España)
+          </p>
+          <h3>Dirección Postal</h3>
+          <p>
+            C/ Eratóstenes, 198 Módulo B – Buzón 3 <br></br>11500 – El Puerto de Santa
+            María, Cádiz (España)
+          </p>
+          <p><h3 className="inlineData">Teléfono</h3> (34) 956 841 136</p>
+          <p><h3 className="inlineData">Mail</h3> info@supermexfoods.com</p>
+          
         </div>
         <div className="divFormGeneral">
           <form id="form" onSubmit={handleSubmit}>
             <div className="containerForm">
-              {/* <div className="mainContainerForm"> */}
               <div className="containerFieldsLeft">
                 <div className="field">
-                  <div className="rectangulo"></div>
+                  {/* <div className="rectangulo"></div> */}
                   <input
                     type="text"
                     className="inputField"
@@ -71,7 +85,7 @@ function ContactoForm() {
                   />
                 </div>
                 <div className="field">
-                  <div className="rectangulo"></div>
+                  {/* <div className="rectangulo"></div> */}
                   <input
                     type="text"
                     className="inputField"
@@ -81,7 +95,7 @@ function ContactoForm() {
                   />
                 </div>
                 <div className="field">
-                  <div className="rectangulo"></div>
+                  {/* <div className="rectangulo"></div> */}
                   <input
                     type="text"
                     className="inputField"
@@ -94,31 +108,31 @@ function ContactoForm() {
                     pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                   />
                 </div>
-                <div className="field">politica de privacidad</div>
+                <div className="field">
+                  <p>He leído y acepto la política de privacidad.</p>
+                </div>
               </div>
               <div className="containerFieldsRight">
-                
-                  <div className="divTextArea">
-                    {/* <div className="rectangulo"></div> */}
-                    <textarea
-                      id="emailjs_message"
-                      placeholder="Comentario"
-                      className="textAreaField"
-                      name="emailjs_message"
-                      maxLength="150"
-                      required
-                    ></textarea>
-                  </div>
-                  <div className="divButton">
-                    {/* <div className="rectangulo"></div> */}
-                    <input
-                      type="submit"
-                      id="button"
-                      className="inputSub"
-                      value="¡Enviar!"
-                    />
-                  </div>
-                
+              {/* <div className="rectangulo2"></div> */}
+                <div className="divTextArea">
+                  <textarea
+                    id="emailjs_message"
+                    placeholder="Comentario"
+                    className="textAreaField"
+                    name="emailjs_message"
+                    maxLength="150"
+                    required
+                  ></textarea>
+                </div>
+                <div className="divButton">
+                  {/* <div className="rectangulo3"></div> */}
+                  <input
+                    type="submit"
+                    id="button"
+                    className="inputSub"
+                    value="¡Enviar!"
+                  />
+                </div>
               </div>
             </div>
           </form>
