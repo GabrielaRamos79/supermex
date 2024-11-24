@@ -1,9 +1,9 @@
-// aqui teneis que importar componente Tribu
+import TribuHeader from "../components/tribu/tribu-header/TribuHeader";
+
 function TribuPage(){
     return (
         <>
-        <p>Hola soy pagina Tribu</p>
-      {/*<Tribu /> */}
+     <TribuHeader />
         </>
     )
 }
