@@ -1,8 +1,10 @@
 import '../tribu-header/TribuHeader.css'
-import imgNacho from '../../../assets/images/home-producto-chips.png'
+import imgTaco from '../../../assets/images/tribu-img/taco-without-border.png'
+import imgRoti from '../../../assets/images/tribu-img/indian-roti-without-border.png'
+
 
 //TODO translation on EN
-//FIXME cambiar las img por unas correctas
+//FIXME cambiar las img por unas de formato svg sin border
 function TribuHeader() {
     return (
         <div className="containerTribu">
@@ -12,7 +14,7 @@ function TribuHeader() {
                         <p>ADÉNTRATE</p>
                     </div>
                     <div className="img-container scale-top">
-                        <img src={imgNacho} alt="Foto del burito" />
+                        <img src={imgTaco} alt="Foto del taco mexicano" />
                     </div>
                     <div className="word">
                         <p>EN</p>
@@ -21,7 +23,7 @@ function TribuHeader() {
 
                 <div className="row 2">
                     <div className="img-container">
-                        <img src={imgNacho} alt="Foto de las tortillas" />
+                        <img src={imgRoti} alt="Foto de los indian roti" />
                     </div>
                     <div className="word">
                         <p>NUESTRA</p>
