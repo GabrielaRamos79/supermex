@@ -16,10 +16,11 @@
     align-items: center;
 }
 
+/*right section*/
 .right.section p:first-of-type {
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 600;
-    margin-bottom: 10%;
+    margin-bottom: 8%;
     max-width: 420px;
 }
 
@@ -30,59 +31,101 @@
 .right.section p:nth-of-type(2) {
     margin-bottom: 10px;
 }
+.emoji-holder{
+    display: flex;
+    justify-content: flex-start;
+    width: 410px;
+}
+
+/*posicion de la flecha*/
+.right {
+    position: relative;
+}
+
+.image-overlay {
+    position: absolute; 
+    top: 75%; 
+    left: 0%; 
+    transform: translateY(100%); 
+    z-index: 1; 
+  }
+  
+.arrow-icon {
+    width: 80px; 
+    height: auto;
+  }
 
 /* Left Section */
 .left {
-    display: flex; 
-    flex-direction: column;
-    justify-content: flex-end; 
-    height: 100vh;
-    align-items: center;
-}
-
-.img-bottom-holder {
-    width: 420px;
-    height: 260px;
     position: relative;
-    overflow-y: clip;
-    margin-top: auto; /
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+  
+}
+/*logica de img*/
+.img-bottom-holder {
+    position: relative;
+    margin-top: -60%;
+    margin-left: -40%; 
 }
 
 .img-bottom-holder img {
-    position: absolute;
-    width: 300px;
-    height: auto;
+    position: absolute; 
+}
+
+.img{
+    width: 320px;
     border-radius: 16px;
     border: 3px solid #BE3E78;
     background-color: #BE3E78;
 }
-
+.fire-icon {
+    width: 80px;
+    top: 10px;
+    left: -50px;
+    z-index: 3;
+}
+/*img de alante*/
 .img-bottom-holder img:first-of-type {
-    top: 60px; /*para poner la img que esta por debajo mas ariba */
-    left: 0; 
-    transform: rotate(-7deg); 
-    z-index: 2; 
+    top: 130px;
+    left: -60px;
+    transform: rotate(-7deg);
+    z-index: 2;
+}
+/*img de atras*/
+.img-bottom-holder img:last-of-type {
+    top: 0;
+    left: 60px;
+    transform: rotate(10deg);
+    z-index: 1;
+}
+
+@media (max-width: 895px) {
+    .aztecas-container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        height: 180vh;
+    }
+    .section {
+        flex: 1 1 auto;
+        width: 90%;
+    }
+  
+    .img-bottom-holder {
+        margin: 20px auto;
+        transform: none;
+        margin-top: -30%;
+        margin-left: 25%;
+    }
     
 }
 
-.img-bottom-holder img:last-of-type {
-    top: 30px; /*para poner la img que esta por encima mas abajo */
-    left: 120px; /* para separar la img derecha mas horisontalmente  */
-    transform: rotate(10deg);
-    z-index: 1; 
-}
-
-.fire-icon{
-    margin-top: 20%;
-    margin-right: 60%;
-}
-
-
-@media (max-width: 965px) {
-    .aztecas-container {
-        height: 180vh;
+@media (max-width: 1060px) {
+   
+    .img {
+        max-width: 230px;
     }
-    .left {
-        height: 80vh; 
-    }
+    
 }
