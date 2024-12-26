@@ -1,0 +1,6 @@
+.history-container {
+    background-color: var(--azul-oscuro);
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+}
