@@ -37,6 +37,18 @@
     width: 410px;
 }
 
+/*visibiladad para parrafos*/
+.paragraph {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .paragraph.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
 /*posicion de la flecha*/
 .right {
     position: relative;
@@ -79,6 +91,7 @@
     border-radius: 16px;
     border: 3px solid #BE3E78;
     background-color: #BE3E78;
+    transition: transform 0.5s ease-out;
 }
 .fire-icon {
     width: 80px;
@@ -90,14 +103,14 @@
 .img-bottom-holder img:first-of-type {
     top: 130px;
     left: -60px;
-    transform: rotate(-7deg);
+    /* transform: rotate(-7deg); */
     z-index: 2;
 }
 /*img de atras*/
 .img-bottom-holder img:last-of-type {
     top: 0;
     left: 60px;
-    transform: rotate(10deg);
+    /* transform: rotate(10deg); */
     z-index: 1;
 }
 

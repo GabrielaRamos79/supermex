@@ -29,7 +29,7 @@ function TribuHeader() {
             <p>ADÉNTRATE</p>
           </div>
           <div className="img-container scale-top">
-            <img src={imgTaco} alt="Foto del taco mexicano" />
+            <img loading="lazy" src={imgTaco} alt="Foto del taco mexicano" />
           </div>
           <div className="word">
             <p>EN</p>
@@ -41,7 +41,7 @@ function TribuHeader() {
           style={{ transform: `translateX(calc(-30vw * ${scrollPercent}))` }}
         >
           <div className="img-container">
-            <img src={imgRoti} alt="Foto de los indian roti" />
+            <img loading="lazy" src={imgRoti} alt="Foto de los indian roti" />
           </div>
           <div className="word">
             <p>NUESTRA</p>
