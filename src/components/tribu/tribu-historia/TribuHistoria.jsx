@@ -1,22 +1,32 @@
 import '../tribu-historia/TribuHistoria.css';
+import ImgBurrito from '../../../assets/images/tribu-img/burrito.png';
+import ImgNachosTomato from '../../../assets/images/tribu-img/nachos-with-tomato-salsa.png';
+import ImgTacoLime from '../../../assets/images/tribu-img/tacos-lime.png';
+import ImgNachos from '../../../assets/images/tribu-img/nachos-pattern.png';
+import IconPinkStar from '../../../assets/images/tribu-img/estrella-rosa.png';
 
 const TribuHistoria = () => {
     return (
         <div className="history-container">
-            <section className="section top-section">
+            <section className="section-history top-section">
                 <div className="text-holder">
-                    <img src="" alt="Icono de la estrella rosa" />
-                    <p>¿Conoces nuestr historia?</p>
+                    <img src={IconPinkStar} alt="Icono de la estrella rosa" />
+                    <div className='text-box'>
+                    <p>¿Conoces nuestra historia?</p>
+                    </div>
                 </div>
 
                 <div className="img-holder">
-                    <img src="" alt="" />
-                    <img src="" alt="" />
-                    <img src="" alt="" />
+                    <div className='img-box'>
+                        <img src={ImgBurrito} alt="Burrito" />
+                        <img src={ImgTacoLime} alt="Nachos-with-tomato-salsa" />
+                        <img src={ImgNachos} alt="Nachos" />
+                    </div>
+
                 </div>
             </section>
 
-            <section className="section center-section">
+            <section className="section-history center-section">
                 <div>
                     <img src="" alt="Icono de la pequeña estrella rosa" />
                     <p>En Supermex llevamos desde XXXX compartiendo los mejores productos mexicanos y tex-mex para que triunfes con tus recetas.
@@ -29,7 +39,7 @@ const TribuHistoria = () => {
                 </div>
             </section>
 
-            <section className="section bottom-section">
+            <section className="section-history bottom-section">
                 <div>
                     <img src="" alt="Icono de la estrella amarillo" />
                     <img src="" alt="Nachos con la salsa de los tomates" />
