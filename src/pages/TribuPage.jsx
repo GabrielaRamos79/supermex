@@ -1,9 +1,13 @@
-// aqui teneis que importar componente Tribu
+import TribuAztecas from "../components/tribu/tribu-aztecas/TribuAztecas";
+import TribuHeader from "../components/tribu/tribu-header/TribuHeader";
+import TribuHistoria from "../components/tribu/tribu-historia/TribuHistoria";
+
 function TribuPage(){
     return (
         <>
-        <p>Hola soy pagina Tribu</p>
-      {/*<Tribu /> */}
+     <TribuHeader />
+     <TribuAztecas />
+     <TribuHistoria />
         </>
     )
 }
