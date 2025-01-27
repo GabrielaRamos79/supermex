@@ -1,11 +1,14 @@
 import React from "react";
 import './Home-Header.css';
 
-const Header = () => {
+const HomeHeader = () => {
     return(
-        <header className="header">
+        <header className="home-header">
             <div className="logo">Logo</div>
+            <div className="tagline">
+        <h1>Siempre es buen momento para el dipeo</h1>
+      </div>
         </header>
     );
 };
-export default Home-Header;
+export default HomeHeader;

@@ -1,5 +1,20 @@
-.header {
-    background-color: #FF5733;
+.home-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #70BABF; /* Cambia por el color según la maqueta */
     padding: 20px;
-    text-align: center;
   }
+  
+  .home-header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .home-header .tagline h1 {
+    font-size: 18px;
+    text-align: center;
+    color: #F4C944; /* Cambia por el color de la maqueta */
+  }
+  
