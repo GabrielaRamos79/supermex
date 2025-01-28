@@ -1,20 +1,40 @@
 .home-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #70BABF; /* Cambia por el color según la maqueta */
-    padding: 20px;
-  }
-  
-  .home-header .logo {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .home-header .tagline h1 {
-    font-size: 18px;
-    text-align: center;
-    color: #F4C944; /* Cambia por el color de la maqueta */
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #70babf; /* Cambia por el color según la maqueta */
+  background-image: url("../../../assets/images/home-img/sello-nacho.png"),
+    url("../../../assets/images/home-img/cabeza.png");
+  background-position: left bottom, right bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 150px, 350px;
+  padding: 20px;
+}
+
+.home-header .tagline h1 {
+  font-size: 151px;
+  font-family: "Barlow Condensed", sans-serif;
+  text-align: center;
+  color: #f4c944; /* Cambia por el color de la maqueta */
+  margin-top: 200px;
+}
+
+.destello-icon {
+  width: 50px;
+  height: 50px;
+  vertical-align: top;
+}
+
+/* Estilos para el carrusel */
+.vertical-carousel {
+  width: 200px; /* Ancho del carrusel */
+  height: 300px; /* Alto del carrusel */
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.vertical-carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen para que se vea bien */
+}

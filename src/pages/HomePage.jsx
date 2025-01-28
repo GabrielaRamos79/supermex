@@ -5,7 +5,7 @@ function HomePage(){
     return (
         <>
         <NavBar/>
-        <p>Hola soy pagina Home</p>
+        {/* <p>Hola soy pagina Home</p> */}
       <Home/>
         </>
     )

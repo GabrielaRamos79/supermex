@@ -1,5 +1,5 @@
 import React from "react";
-import "./Home-Noticias";
+import "./Home-Noticias.css";
 
 const HomeNoticias = () => {
   return (

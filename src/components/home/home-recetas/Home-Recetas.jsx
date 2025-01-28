@@ -1,5 +1,5 @@
 import React from "react";
-import "./Home-Recetas";
+import "./Home-Recetas.css";
 
 const HomeRecetas = () => {
   return (
