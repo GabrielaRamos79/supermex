@@ -80,7 +80,7 @@ function ContactoForm() {
                     className="inputField"
                     name="emailjs_name"
                     id="emailjs_name"
-                    placeholder="Nombre"
+                    placeholder="Nombre *"
                     required
                   />
                 </div>
@@ -91,7 +91,7 @@ function ContactoForm() {
                     className="inputField"
                     name="emailjs_tlf"
                     id="emailjs_tlf"
-                    placeholder="Teléfono"
+                    placeholder="Teléfono *"
                   />
                 </div>
                 <div className="field">
@@ -99,7 +99,7 @@ function ContactoForm() {
                   <input
                     type="text"
                     className="inputField"
-                    placeholder="Email"
+                    placeholder="Email *"
                     name="emailjs_email"
                     id="emailjs_email"
                     value={email}
