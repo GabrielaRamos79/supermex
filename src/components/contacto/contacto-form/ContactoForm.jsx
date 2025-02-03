@@ -49,29 +49,42 @@ function ContactoForm() {
 
   return (
     <>
-      <div className="mainTittle">
+      {/* <div className="mainTittle">
         <h2>¿Quieres enviar un mensaje a la tribu?</h2>
-      </div>
+      </div> */}
 
       <div className="mainContainerContact">
         <div className="dataContact">
           <h3>Fábrica/Envíos</h3>
           <p>
-            Pol. Ind. Las Salinas de Poniente. c/ Eratóstenes, 198.<br></br> 11500 – El
-            Puerto de Santa María, Cádiz (España)
+            Pol. Ind. Las Salinas de Poniente. c/ Eratóstenes, 198.<br></br>{" "}
+            11500 – El Puerto de Santa María, Cádiz (España)
           </p>
+          <hr></hr>
           <h3>Dirección Postal</h3>
           <p>
-            C/ Eratóstenes, 198 Módulo B – Buzón 3 <br></br>11500 – El Puerto de Santa
-            María, Cádiz (España)
+            C/ Eratóstenes, 198 Módulo B – Buzón 3 <br></br>11500 – El Puerto de
+            Santa María, Cádiz (España)
           </p>
-          <p><h3 className="inlineData">Teléfono</h3> (34) 956 841 136</p>
-          <p><h3 className="inlineData">Mail</h3> info@supermexfoods.com</p>
-          
+          <div className="dataContactDown">
+            <div className="contactRow">
+              <h3 className="inlineData">Teléfono</h3>
+              <span className="phoneEmail">(34) 956 841 136</span>
+            </div>
+            <div className="contactRow">
+              <h3 className="inlineData">Mail</h3>
+              <span className="phoneEmail">info@supermexfoods.com</span>
+            </div>
+          </div>
         </div>
+
         <div className="divFormGeneral">
           <form id="form" onSubmit={handleSubmit}>
+          <div className="mainTittle">
+                  <h2>¿Quieres enviar un mensaje a la tribu?</h2>
+                </div>
             <div className="containerForm">
+              
               <div className="containerFieldsLeft">
                 <div className="field">
                   {/* <div className="rectangulo"></div> */}
@@ -113,7 +126,7 @@ function ContactoForm() {
                 </div>
               </div>
               <div className="containerFieldsRight">
-              {/* <div className="rectangulo2"></div> */}
+                {/* <div className="rectangulo2"></div> */}
                 <div className="divTextArea">
                   <textarea
                     id="emailjs_message"
