@@ -2,6 +2,7 @@
 import emailjs from "emailjs-com";
 import { useEffect, useState } from "react";
 import "./contacto-form.css";
+import startIcon from './startIcon.png';
 
 function ContactoForm() {
   const [email, setEmail] = useState("");
@@ -52,7 +53,7 @@ function ContactoForm() {
       {/* <div className="mainTittle">
         <h2>¿Quieres enviar un mensaje a la tribu?</h2>
       </div> */}
-
+      <img src={startIcon} alt="Start Icon" id="icon1"></img>
       <div className="mainContainerContact">
         <div className="dataContact">
           <h3>Fábrica/Envíos</h3>

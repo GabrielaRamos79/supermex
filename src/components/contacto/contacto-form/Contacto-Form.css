@@ -24,31 +24,34 @@ h2{
   text-align: left;
   color: #502F80;
   background-color: #F4EFFF;
-  font-size: 1.2em;
+  font-size: 1.8em;
   margin: 0;
   padding: 0;
+  padding-bottom: 7%;
 }
 
 .mainContainerContact {
   display: flex;
   flex-direction: row;
   background-color: #F4EFFF;
+  /* background-color: #dfa4c8; */
   width: 100%;
   height: 100%;
-  padding: 15px;
+  padding: 5%;
   box-sizing: border-box;
 }
 
 .dataContact {
-  width: 30%;
-  background-color: yellow;
+  width: 20%;
+  /* background-color: yellow; */
+  padding-top: 5%;
 }
 
 .divFormGeneral {
-  width: 70%;
+  width: 40%;
   height: auto;
-  background-color: #3883f3;
-  margin-left: 5%;
+  /* background-color: #3883f3; */
+  margin-left: 15%;
 }
 
 .containerForm {
@@ -287,3 +290,12 @@ hr {
   display: inline;
   padding-right: 20%;
 } */
+
+#icon1{
+  width: 5%;
+  height: 8%;
+  position: absolute;
+  z-index: 100;
+  top:120px;
+  left:100px;
+}
