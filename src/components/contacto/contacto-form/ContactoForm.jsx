@@ -2,10 +2,11 @@
 import emailjs from "emailjs-com";
 import { useEffect, useState } from "react";
 import "./contacto-form.css";
-import startIcon from './startIcon.png';
+import startIcon from "./startIcon.png";
 
 function ContactoForm() {
   const [email, setEmail] = useState("");
+  const [isChecked, setIsChecked] = useState(false);
 
   useEffect(() => {
     emailjs.init("8FooRU2Jcz3Kb8GGN");
@@ -21,10 +22,46 @@ function ContactoForm() {
     setShowAlert2(false);
   };
 
+  const handleCheckboxChange = (event) => {
+    setIsChecked(event.target.checked);
+  };
+
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+  //   if (!emailRegex.test(email)) {
+  //     setShowAlert2(true);
+  //   } else {
+  //     const btn = event.target.querySelector("#button");
+  //     btn.value = "Enviando...";
+
+  //     const serviceID = "service_sgijj4u";
+  //     const templateID = "template_d8xam0d";
+
+  //     emailjs
+  //       .sendForm(serviceID, templateID, event.target)
+  //       .then(() => {
+  //         btn.value = "Send Email";
+  //         setShowAlert(true);
+  //         window.location.reload();
+  //       })
+  //       .catch((err) => {
+  //         btn.value = "Send Email";
+  //         alert(JSON.stringify(err));
+  //       });
+  //   }
+  // };
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
+    if (!isChecked) {
+      alert("Debes aceptar la política de privacidad.");
+      return;
+    }
+
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (!emailRegex.test(email)) {
       setShowAlert2(true);
     } else {
@@ -81,11 +118,10 @@ function ContactoForm() {
 
         <div className="divFormGeneral">
           <form id="form" onSubmit={handleSubmit}>
-          <div className="mainTittle">
-                  <h2>¿Quieres enviar un mensaje a la tribu?</h2>
-                </div>
+            <div className="mainTittle">
+              <h2>¿Quieres enviar un mensaje a la tribu?</h2>
+            </div>
             <div className="containerForm">
-              
               <div className="containerFieldsLeft">
                 <div className="field">
                   {/* <div className="rectangulo"></div> */}
@@ -122,8 +158,15 @@ function ContactoForm() {
                     pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                   />
                 </div>
-                <div className="field">
-                  <p>He leído y acepto la política de privacidad.</p>
+                <div className="field1">
+                  <label>
+                    <input
+                      type="checkbox"
+                      checked={isChecked}
+                      onChange={handleCheckboxChange}
+                    />
+                    He leído y acepto la política de privacidad.
+                  </label>
                 </div>
               </div>
               <div className="containerFieldsRight">
