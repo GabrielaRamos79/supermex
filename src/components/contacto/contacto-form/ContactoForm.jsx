@@ -76,7 +76,7 @@ function ContactoForm() {
         .then(() => {
           btn.value = "Send Email";
           setShowAlert(true);
-          window.location.reload();
+          // window.location.reload();
         })
         .catch((err) => {
           btn.value = "Send Email";
@@ -141,7 +141,7 @@ function ContactoForm() {
                     className="inputField"
                     name="emailjs_tlf"
                     id="emailjs_tlf"
-                    placeholder="Teléfono *"
+                    placeholder="Teléfono"
                   />
                 </div>
                 <div className="field">
